@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "26773095715",
+    "firebase_url": "https://cafeteriaapp-aebc4-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "cafeteriaapp-aebc4",
+    "storage_bucket": "cafeteriaapp-aebc4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26773095715:android:3ed7bb374ee1d623b0b896",
+        "android_client_info": {
+          "package_name": "com.example.hackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg41FgUIKZ7RgeFy-13YDzhVIcvtPPCj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26773095715:android:d1eb821a56c7b96eb0b896",
+        "android_client_info": {
+          "package_name": "com.example.link"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg41FgUIKZ7RgeFy-13YDzhVIcvtPPCj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
