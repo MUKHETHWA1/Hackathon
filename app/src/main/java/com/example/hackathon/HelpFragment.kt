@@ -64,7 +64,7 @@ class HelpFragment : Fragment() {
                 // Specify a Gemini model appropriate for your use case
                 modelName = "gemini-pro",
                 // Access your API key as a Build Configuration variable (see "Set up your API key" above)
-                apiKey = "AIzaSyAA63TxbTxgUPg5zCP-bdwYl7I8ulQKGvo"
+                apiKey = "api"
             )
 
         //val prompt = "Write a story about a magic backpack."
