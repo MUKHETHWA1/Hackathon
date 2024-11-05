@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Menu())
 
+        //Connecting every fragment with their id
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.menu-> replaceFragment(Menu())
