@@ -27,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         auth= FirebaseAuth.getInstance()
 
+        //Login button to verify user login information and take user to the main activity page
         binding.loginButton.setOnClickListener {
             val email=  binding.username.text.toString()
             val pass=   binding.password.text.toString()
@@ -51,6 +52,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
+        //Register Button, redirect user to register page
         binding.btnRegister.setOnClickListener {
             val intent = Intent(this,RegisterActivity::class.java)
             startActivity(intent)

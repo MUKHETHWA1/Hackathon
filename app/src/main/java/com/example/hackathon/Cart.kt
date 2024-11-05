@@ -40,7 +40,8 @@ class Cart : Fragment() {
     private lateinit var cartRecyclerView: RecyclerView
     private lateinit var checkoutButton: Button
     private lateinit var cartItemAdapter: CartItemAdapter
-    private val cartItems = mutableListOf<CartItem>() // Sample data list
+    // Sample data list
+    private val cartItems = mutableListOf<CartItem>()
     private lateinit var totalAmountTextView: TextView
     private lateinit var emptyCartMessage: TextView
     private lateinit var database: FirebaseDatabase
@@ -112,7 +113,7 @@ class Cart : Fragment() {
             }
 
 
-            // Push order under "Orders/{userId}/" node
+            // Push order to database
             dbRef.child(userId).push().setValue(orderData)
                 .addOnSuccessListener {
                     Toast.makeText(requireContext(), "Order added successfully", Toast.LENGTH_SHORT).show()
@@ -158,7 +159,7 @@ class Cart : Fragment() {
 
         // Start a countdown timer for 5 minutes (300,000 milliseconds)
         // countdownTimer = object : CountDownTimer(5 * 6o * 1000, 1000) {
-        countdownTimer = object : CountDownTimer(1 * 10 * 1000, 1000) {
+        countdownTimer = object : CountDownTimer(5 * 60 * 1000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 val minutes = (millisUntilFinished / 1000) / 60
                 val seconds = (millisUntilFinished / 1000) % 60
@@ -166,7 +167,7 @@ class Cart : Fragment() {
             }
 
             override fun onFinish() {
-                dialog.dismiss()
+                dialog.dismiss() // Dismiss the dialog when the count down timer finishes
                 showOrderReadyDialog(orderNumber, totalAmount) // Pass the order number and total amount
             }
         }.start()
@@ -234,7 +235,7 @@ class Cart : Fragment() {
     }
 
 
-
+ // function to enable swiping item left to delete from cart
     private fun setupSwipeToDelete() {
         val itemTouchHelperCallback = object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
             override fun onMove(

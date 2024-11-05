@@ -1,9 +1,9 @@
 package com.example.hackathon
-
+//item on cart
 data class CartItem(
     val name: String,
-    val unitPrice: Double,  // Changed from `price` to `unitPrice`
-    var quantity: Int       // Make `quantity` mutable
+    val unitPrice: Double,
+    var quantity: Int
 ) {
     val totalPrice: Double
         get() = unitPrice * quantity
