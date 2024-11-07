@@ -1,3 +1,5 @@
+Food Ordering App
+
 Key features of our app:
 
 1. User Registration and Login: All user information and orders are securely stored in Firebase.
