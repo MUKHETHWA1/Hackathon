@@ -7,3 +7,5 @@ Key features of our app:
 3. Cart: Allows users to review their current order.
 4. Recent Orders: Displays past orders for easy reordering.
 5. AI Customer Support: To showcase our skills, we integrated an AI assistant. Students can ask the AI for order suggestions, and it will provide recommendations.
+
+6. To run the application you need to connect it to the firebase database
